@@ -2,7 +2,7 @@ import sys, pygame
 pygame.init()
 
 size = width, height = 1520, 900
-speed = [3, 5]
+speed = [2, 3]
 
 rgbColor = red, green, blue, alpha = 0, 0, 0, 255
 
@@ -28,7 +28,7 @@ while 1:
     green = (red + blue)/3 % 256
     rgbColor = red, green, blue, 255
 
-    # screen.fill(rgbColor)
+    screen.fill(rgbColor)
     screen.blit(ball, ballrect)
     
     pygame.display.flip()
